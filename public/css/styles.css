@@ -16,11 +16,6 @@
     padding: 0;
 }
 
-body{
-    background-color: var(--amarillo);
-    padding: 20px;
-}
-
 li{
     list-style: none;
 }
@@ -32,21 +27,37 @@ li a{
 }
 
 /* header */
+header{
+    background-color: var(--amarillo);
+    width: 100%;
+}
+
 header img{
-    width: 55%;
+    width: 39%;
     margin-top: 30px;
     margin-left: 30px;
 }
 
-header nav.search-bar input{
-    width: auto;
+header .search-bar{
+    padding: 2px;
+    margin-left: 20px;
+}
+
+header .search-bar input{
+    width: 60%;
     margin: 10px auto 2px;
 }
 
-header nav.search-bar div a{
+header .search-bar div a{
     background-color: var(--grisClaro);
-    color: rgb(0, 0, 0);
+    color: var(--azul);
     border: solid 1px var(--grisOscuro);
+    border-radius: 3px;
+}
+
+header .search-bar div a i{
+    padding: 1px;
+    font-size: 13px;
 }
 
 header p{
@@ -66,17 +77,74 @@ header .login-bar{
 }
 
 header .burger-menu{
-    margin-bottom: 20px;
     text-align: center;
 }
 
 header .burger-menu i {
     background-color: var(--celeste);
-    color: var(--grisClaro);
+    color: rgb(255, 255, 255);
     font-size: 20px;
     border-radius: 14%;
     padding: 10px;
 }
 
 /* main */
+main{
+    background-color: var(--grisClaro);
+    width: 100%;
+}
+
+main img.banner{
+    display: none;
+}
+
+main section{
+    padding: 10px;
+}
+
+main section h2{
+    margin: 30px auto;
+    font-size: 24px;
+    color: var(--grisOscuro);
+}
+
+main section article .product{
+    width: 93vw;
+    margin: 10px auto;
+}
+
+main section article .price{
+    font-size: 18px;
+    margin: 10px auto;
+}
+
+main section article .off{
+    font-size: 16px;
+    margin: 10px auto;
+}
+
+main section article h4{
+    font-size: 16px;
+    margin: 10px auto;
+}
+
 /* footer */
+footer section article{
+    text-align: center;
+    padding: 0 35px;
+}
+
+footer section article i{
+    margin: 50px auto 10px;
+    font-size: 2em;
+    color: var(--celeste);
+}
+
+footer section article .description{
+    font-size: 12px;
+}
+
+footer .copyright{
+    font-size: 12px;
+    margin: 40px 0 20px 15px;
+}
